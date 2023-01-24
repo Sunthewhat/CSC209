@@ -14,7 +14,7 @@ public class PetWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Pet p1 = new Pet("Leub",111,"female");
     }
     
 }
