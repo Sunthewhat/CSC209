@@ -37,3 +37,4 @@
 # Else
 .vscode
 .DS_Store
+/petWorld/petWorld/nbproject/private/
