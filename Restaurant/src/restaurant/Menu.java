@@ -22,9 +22,17 @@ public class Menu {
                 for (int j = i; j < amountOfFood - 1; j++) {
                     foods[j] = foods[j + 1];
                 }
+                amountOfFood--;
                 return true;
             }
         }
         return false;
+    }
+
+    public void showAllFood() {
+        for (int i = 0; i < amountOfFood; i++) {
+            System.out.print(foods[i].ID + " " + foods[i].name + " ");
+        }
+        System.out.println();
     }
 }
