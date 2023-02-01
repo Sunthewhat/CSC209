@@ -9,7 +9,7 @@ public class Food {
     double price;
     int calory;
     short star;
-    Vector ingredients;
+    Vector<String> ingredients;
 
     public Food(int ID, String name, double price, int calory, short star) {
         this.ID = ID;

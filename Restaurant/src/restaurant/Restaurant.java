@@ -29,13 +29,15 @@ public class Restaurant {
         tomyum.addIngredient("chilli pepper");
         Food coke = new Food(3, "Coca cola", 20, 150, (short) 3);
         Food pepsi = new Food(4, "Pepsi", 20, 150, (short) 3);
-        Food fanta = new Food(4, "Fanta", 20, 150, (short) 2);
+        Food fanta = new Food(5, "Fanta", 20, 150, (short) 2);
         Menu menu = new Menu();
         menu.addNewFood(padthai);
         menu.addNewFood(pepsi);
         menu.addNewFood(tomyum);
         menu.addNewFood(coke);
         menu.addNewFood(fanta);
+        menu.showAllFood();
+        // menu.removeFood(4);
         menu.showAllFood();
 
     }
