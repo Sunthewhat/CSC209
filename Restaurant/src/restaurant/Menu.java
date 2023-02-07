@@ -51,15 +51,29 @@ public class Menu {
      * Vector<String> ingredients; 20*10 = 200 bytes
      * 1 record = 4 + 20 +20 +8 +4 +2 +200 = 258 bytes
      */
+    public void readAllRecord() {
+        try {
+            RandomAccessFile fptr = new RandomAccessFile(filename, "r");
+            // while (fptr.getFilePointer() < fptr.length()) {
+            int id = fptr.readInt();
+            System.out.println(id);
+            // }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
     public boolean writeOneFoodToFile(Food food) {
 
         try {
             RandomAccessFile fpointer = new RandomAccessFile(filename, "rw");
             fpointer.seek(fpointer.length());
-            String userName = "Chotiwet 65130500208";
+            // String userName = "Chotiwet 65130500208";
             byte[] temp = new byte[30];
-            temp = userName.concat("                                      ").getBytes();
-            fpointer.write(temp, 0, 30);
+            // temp = userName.concat(" ").getBytes();
+            // fpointer.write(temp, 0, 30);
 
             fpointer.writeInt(food.ID);
             // byte[] temp = new byte[20];
