@@ -28,8 +28,22 @@ public class StackQueueLab {
         s1.reverse2();
         System.out.println(s1.topEl());
         BigNumber b1 = new BigNumber("123456789");
-        BigNumber b2 = new BigNumber("543219876");
-        b1.add(b2);
+        BigNumber b2 = new BigNumber("5432109876");
+        System.out.println(b1.add(b2));
+        CSQueue q1 = new CSQueue(5);
+        q1.enQueue(10);
+        q1.enQueue(20);
+        q1.enQueue(60);
+        q1.enQueue(2);
+        q1.enQueue(70);
+        System.out.println(q1.firstEl());
+        q1.deQueue();
+        q1.deQueue();
+        q1.deQueue();
+        System.out.println(q1.firstEl());
+        q1.deQueue();
+        q1.deQueue();
+        System.out.println(q1.firstEl());
     }
 
 }

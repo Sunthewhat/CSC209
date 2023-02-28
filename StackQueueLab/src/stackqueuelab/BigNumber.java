@@ -40,6 +40,9 @@ public class BigNumber {
         }
         if (carry > 0)
             res.push(carry);
+        while (!res.isEmpty()) {
+            ans += res.pop();
+        }
         return new BigNumber(ans);
     }
 }
