@@ -11,6 +11,7 @@ package sll_lab;
 public class SLLNode {
     int info;
     SLLNode next;
+    SLLNode prev;
 
     public SLLNode(int info, SLLNode next) {
         this.info = info;

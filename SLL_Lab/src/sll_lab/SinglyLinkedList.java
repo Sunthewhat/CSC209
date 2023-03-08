@@ -79,6 +79,7 @@ public class SinglyLinkedList {
 
             }
             temp.next = null;
+            tail = temp.next;
             return lastInfo;
         }
     }
