@@ -159,10 +159,7 @@ public class Menu {
         try {
             RandomAccessFile fptr = new RandomAccessFile(filename, "rw");
             fptr.seek(fptr.length());
-            // String userName = "Chotiwet 65130500208";
             byte[] temp = new byte[30];
-            // temp = userName.concat(" ").getBytes();
-            // fpointer.write(temp, 0, 30);
 
             fptr.writeInt(food.ID);
             // byte[] temp = new byte[20];
